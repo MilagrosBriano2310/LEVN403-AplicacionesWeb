@@ -1,0 +1,215 @@
+body {
+    background-color: #dff6ff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+ 
+h1 {
+    color: #333;
+}
+ 
+p {
+    font-size: 18px;
+}
+ 
+ 
+.personaje {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    margin: 40px auto;
+ 
+    /* Animación */
+    transition: transform 0.5s ease;
+}
+ 
+.cabeza {
+    position: absolute;
+    width: 180px;
+    height: 130px;
+ 
+    background-color: #bdbdbd;
+    border: 4px solid #333;
+    border-radius: 25px;
+ 
+    top: 50px;
+    left: 60px;
+ 
+    transition: background-color 0.5s ease;
+}
+ 
+.ojo {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+ 
+    background-color: #3498db;
+    border-radius: 50%;
+ 
+    top: 40px;
+ 
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+ 
+.ojo-izquierdo {
+    left: 35px;
+}
+ 
+.ojo-derecho {
+    right: 35px;
+}
+ 
+.boca {
+    position: absolute;
+    width: 70px;
+    height: 15px;
+ 
+    background-color: #333;
+    border-radius: 10px;
+ 
+    bottom: 25px;
+    left: 55px;
+}
+ 
+.antena {
+    position: absolute;
+    width: 6px;
+    height: 40px;
+ 
+    background-color: #333;
+ 
+    top: 10px;
+    left: 147px;
+}
+ 
+.punta {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+ 
+    background-color: #e74c3c;
+    border-radius: 50%;
+ 
+    top: 0;
+    left: 141px;
+ 
+    transition: transform 0.3s ease;
+}
+ 
+.cuerpo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+ 
+    background-color: #95a5a6;
+    border: 4px solid #333;
+    border-radius: 15px;
+ 
+    top: 190px;
+    left: 75px;
+}
+ 
+.boton {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+ 
+    border-radius: 50%;
+ 
+    transition: transform 0.3s ease;
+}
+ 
+.boton1 {
+    background-color: #e74c3c;
+    top: 30px;
+    left: 65px;
+}
+ 
+.boton2 {
+    background-color: #f1c40f;
+    top: 65px;
+    left: 65px;
+}
+ 
+.boton3 {
+    background-color: #2ecc71;
+    top: 100px;
+    left: 65px;
+}
+ 
+.brazo {
+    position: absolute;
+    width: 35px;
+    height: 110px;
+ 
+    background-color: #7f8c8d;
+    border: 4px solid #333;
+    border-radius: 20px;
+ 
+    top: 205px;
+ 
+    transition: transform 0.5s ease;
+}
+ 
+.brazo-izquierdo {
+    left: 25px;
+    transform: rotate(15deg);
+}
+ 
+.brazo-derecho {
+    right: 25px;
+    transform: rotate(-15deg);
+}
+ 
+ 
+.pierna {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+ 
+    background-color: #7f8c8d;
+    border: 4px solid #333;
+    border-radius: 15px;
+ 
+    top: 340px;
+}
+ 
+.pierna-izquierda {
+    left: 90px;
+}
+ 
+.pierna-derecha {
+    right: 90px;
+}
+ 
+.personaje:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+ 
+.personaje:hover .cabeza {
+    background-color: #8e44ad;
+}
+ 
+.personaje:hover .ojo {
+    background-color: #f1c40f;
+    transform: scale(1.3);
+}
+ 
+.personaje:hover .brazo-izquierdo {
+    transform: rotate(35deg);
+}
+ 
+ 
+.personaje:hover .brazo-derecho {
+    transform: rotate(-35deg);
+}
+ 
+.personaje:hover .boton {
+    transform: scale(1.3);
+}
+ 
+.personaje:hover .punta {
+    transform: scale(1.4);
+}
+ 
